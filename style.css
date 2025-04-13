@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenedor{
+    width: 1100px;
+    margin: 0px auto;
+    border: solid black;
+
+
+}
+
+header{
+    font-size: 100px;
+    height: 100%;
+    align-items: center;
+    font-weight: 1000px;
+    color: white;
+    text-align: center;
+    background-color: red;
+    line-height: 100%;
+    border-bottom: 3px dashed black;
+  
+
+}
+
+
+
+nav{
+    background-color: lightblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+   float: left;
+   list-style: none; /*para que no tengan ningun tipo de estilo, se quita ela viñeta de las listas*/
+   margin: 10px;
+}
+
+.clearfix{
+    clear: both; /*para que los elementos titulo del articulo no floten hacia arriba*/
+
+}
+
+#contenido{
+    float: left;
+    width:calc(80% - 80px); /*contenido ocupa el 80% de esa section en la pantalla*/
+    background: green;
+    min-height: 500px; /*altura minima del contenido*/
+    padding: 40px;
+}
+
+.articulo {
+color: white;
+margin-top:15px;
+border-bottom: 1px solid #eee;
+padding-bottom: 10px;
+
+}
+
+/*seleccionamos el primer articulo para darle estilos*/
+.articulo:first-child{
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+
+}
+
+/*seleccionamos el h2 de la clase ariculo para darle un tamaño a la letra*/
+.articulo h2{
+font-size: 25px;
+}
+
+aside{
+    float: left;
+    width: calc(20% - 20px); /*el aside ocupa el 20% de la section. la expresion calc le resta 20px al ancho del aside. Estos 20px salen de la suma de los dos paddin de 10px*/ 
+    background: orange;
+    min-height: 500px; /*altura minima del aside*/
+    padding-left:  10px;
+    padding-right: 10px;
+    padding-top: 80px;
+}
+
+footer{
+        font-size: 20px;
+        align-items: center;
+        font-weight: 1000px;
+        color: #ffffff;
+        text-align: center;
+        height: 100%;
+        line-height: 100%;
+        background-color: black;
+        bottom: 0%; /*para que el footer siem,pre este pegado abajo de la pagina*/
+        width: 100%; /*ocupa todo el ancho del footer*/
+        
+}
